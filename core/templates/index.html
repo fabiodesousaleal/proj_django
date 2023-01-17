@@ -9,5 +9,12 @@
 
   <body>
     Hello World! Django!
+    <ul>
+      {% for pessoa in pessoas %}
+      <li>{{pessoa.nome}} </li>
+      {% endfor %}
+    </ul>
+
+
   </body>
 </html>
