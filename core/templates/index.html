@@ -11,7 +11,10 @@
     Hello World! Django!
     <ul>
       {% for pessoa in pessoas %}
-      <li>{{pessoa.nome}} <a href="{% url 'editar' pessoa.id %}">editar</a></li>
+      <li>{{pessoa.nome}}
+        <a href="{% url 'editar' pessoa.id %}">editar</a>
+        <a href="{% url 'delete' pessoa.id %}">deletar</a>
+      </li>
       {% endfor %}
     </ul>
 
